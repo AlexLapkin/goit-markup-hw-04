@@ -322,7 +322,7 @@ padding: 120px 0;} /*--Задаем внутренние паддинги--*/
     /*--width: calc((100% - 3*24px)/4)--*/
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(47, 66, 0.08), 0px 2px 1px rgba(47, 66, 0.08);
+    0px 1px 1px rgba(47, 66, 0.16), 0px 2px 1px rgba(47, 66, 0.08);
 }
 
 /*--Создание контейнера - имя, должность членов команды--*/
@@ -339,6 +339,10 @@ outline: 1px solid red; } /*--внутренние отступы контейн
 /*--Задание параметров должности сотрудника--*/
 .name-job .section-text 
 {text-align: center;}
+
+.icon-sl 
+{fill: #f4f4fd;}
+
 
 /*--Задание отступов контейнеру соцсетей Our team--*/
 .social-link-container
