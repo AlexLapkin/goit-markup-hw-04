@@ -348,6 +348,7 @@ margin-top: 8px;}
 .section-social-ul
 {display: flex;
 gap: 24px;
+justify-content: center;
 }
 
 
@@ -361,6 +362,7 @@ justify-content: center;
 background-color: #4D5AE5;
 fill:#FFFFFF;
 border-radius: 50%;
+margin-top: 8px;
 }
 
 .social-link:hover,
