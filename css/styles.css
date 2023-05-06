@@ -327,7 +327,8 @@ padding: 120px 0;} /*--Задаем внутренние паддинги--*/
 
 /*--Создание контейнера - имя, должность членов команды--*/
 .name-job
-{padding: 32px 16px; } /*--внутренние отступы контейнера--*/
+{padding: 32px 0;
+outline: 1px solid red; } /*--внутренние отступы контейнера--*/
 
 /*--Задание параметров ФИ сотрудника--*/
 .name-job .section-subtitle
@@ -354,14 +355,9 @@ justify-content: center;
 
 /*--Ячейка каждой иконки линка соцсети--*/
 .social-link
-{display: flex;
+{
 width: 40px;
 height: 40px;
-align-items: center;
-justify-content: center;
-background-color: #4D5AE5;
-fill:#FFFFFF;
-border-radius: 50%;
 margin-top: 8px;
 }
 
@@ -369,6 +365,24 @@ margin-top: 8px;
 .social-link:focus
 {background-color: #31D0AA; }
 
+
+.social-link-a
+{
+display: flex;
+width: 100%;
+height: 100%;
+background-color: #4D5AE5;
+border-radius: 50%;
+align-items: center;
+justify-content: center;
+fill: #FFFFFF;
+}
+
+
+.social-link-a:hover,
+.social-link-a:focus {
+background-color: #404BBF;
+}
 
 
 /*--Задаем внутренние паддинги секции закачиков--*/
@@ -378,11 +392,11 @@ margin-top: 8px;
 /*--Описание секции Заказчика--*/
 .section-customers-ul
 {display: flex;
- gap: 24px; }
+ gap: 24px;}
 
 /*--Описание контейнера логотипов заказчиков--*/
 .logo-company
-{margin-top:72px;}
+{margin-bottom:72px;}
 
 /*--Описываем ссылку на иконку Заказчика--*/
 .customer-link
@@ -435,6 +449,8 @@ fill: #8e8f99;
     color: var(--main-btn-color);
     background-color: #404BBF;
     border: 1px solid transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12) ;
 }
 
 /*--Добавляем эффект тени на кнопки Портфолио при ховере и фокусе--*/
@@ -463,7 +479,7 @@ flex-basis: calc((100% - 2*24px)/3);
 .section-item-card:hover
 {box-shadow: 0px 1px rgba(46, 47, 66, 0.16);}
 
-/*--Создание контейнера - имя, должность членов команды--*/
+/*--Создание контейнера - описание карточки портфолио--*/
 .img-title {
 padding: 32px 16px; /*--внутренние отступы контейнера--*/
 border: 1px solid #e7e9fc;
@@ -473,6 +489,19 @@ border-top: none;
 /*--Задание отступа подзаголовку img Portfolio--*/
 .img-title .section-subtitle
 {margin-bottom: 8px;}
+
+/*--Делаем ссылку блочным элементом--*/
+.pf-link
+{display: block;
+}
+
+/*--Эффект тени при наведении на карточку Портфолио--*/
+.pf-link:hover,
+.pf-link:focus
+{box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 
 /*--Данные Футера--*/
 .footer {
@@ -484,7 +513,8 @@ margin-right: auto;
 
 /*--Ставим по горизонтали левый и рпавый блок футера--*/
 .foot-content
-{display: flex;}
+{display: flex;
+align-items: baseline;}
 
 /*--Дополнительные данные нижнего логотипа--*/
 .foot {
@@ -520,16 +550,15 @@ width: 264px;
 .social-link-footer-container
 {padding: 0;}
 
-/*--Задание отступов контейнеру соцсетей футера--*/
-.social-link-footer 
-{padding: 0;}
 
+/*--Текст Social media в футере--*/
 .footer-text-title
 {color: var(--footer-secondary-text-color);
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
+margin-bottom: 16px;
 }
 
 
@@ -537,4 +566,4 @@ letter-spacing: 0.02em;
 .section-social-ul-footer 
 {display: flex;
  gap: 16px;
- margin-top: 16px;}
+ }
