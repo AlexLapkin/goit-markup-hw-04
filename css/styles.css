@@ -55,47 +55,44 @@ height: auto;}
 /*--Задаем контейнер для центровки и ограничения ширины контента--*/
 .header {
 border-bottom: 1px solid #E7E9FC;
-box-shadow: 0px 2px 1px rgba(47, 66, 0.08),
+box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); 
 }
 
+/*--Контейнер, в который помещается контент секций--*/
 .container
-{
-width: 1158px;
+{width: 1158px;
 margin: 0 auto;
-padding: 0 15px; 
-}
+padding: 0 15px;}
 
 /*--Описываем контейнер главной навигации--*/
 .main-nav {
 display: flex; /*--Выстраиваем элементы по горизонтали--*/
-align-items: center;
-}
+align-items: center;}
 
 /*--Делаем логотип и список навигации flex-контейнером--*/
 .nav {
 display: flex;
-align-items: center;/*--Центруем элементы вдоль горизонтальной оси--*/
-}
+align-items: center;}/*--Центруем элементы вдоль горизонтальной оси--*/
+
 
 /*--Данные верхнего логотипа--*/
 .logo
-{
-color: var(--logo-color);
+{color: var(--logo-color);
 font-family: 'Raleway', sans-serif;
 font-weight: 800;
 font-size: 18px;
 line-height: 1.17;
 letter-spacing: 0.03em;
-text-transform: uppercase;
-}
+text-transform: uppercase;}
 
 /*--Дополнительные данные верхнего логотипа--*/
 .head
 {padding: 24px 0;
-margin-right: 76px;/*--Задаем отступ между логотипом и nav-ul--*/
-}
+margin-right: 76px;}/*--Задаем отступ между логотипом и nav-ul--*/
 
+
+/*--Описываем слово Studio--*/
 .header-word {
 color: var(--header-word-color);
 font-family: 'Raleway' sans-serif;;
@@ -103,19 +100,15 @@ font-weight: 800;
 font-size: 18px;
 line-height: 1.17;
 letter-spacing: 0.03em;
-text-transform: uppercase;
-}
+text-transform: uppercase;}
 
 /*--Делаем список навигации flex-контейнером--*/
-.nav-ul {
-display: flex;
-/*--gap: 40px;--*/
-}
+.nav-ul 
+{display: flex;}
 
 /*--Задаем правый отступ всем item nav, кроме крайних--*/
- .nav-ul .item:not(:last-child) {
- margin-right: 40px;
- }
+ .nav-ul .item:not(:last-child) 
+ {margin-right: 40px; }
 
 /*--Данные навигационных ссылок--*/
 .nav-link {
@@ -130,9 +123,8 @@ display: flex;
 
 /*--Меняем цвет ссылок при наведении--*/
 .nav-link:hover,
-.nav-link:focus {
-    color: var(--link-active-color);
-}
+.nav-link:focus
+{color: var(--link-active-color);}
 
 /*--Прижимаем секцию почты и телефона к правому краю--*/
 .cont
@@ -142,13 +134,13 @@ margin-left: auto;}
 /*--Делаем список контактов flex-контейнером--*/
 .cont-ul {
 display: flex;
-/*--gap: 40px;--*/
-}
+/*--gap: 40px;--*/}
 
 /*--Задаем правый отступ всем item cont, кроме крайних--*/
 .cont-ul .item:not(:last-child) 
 {margin-right: 40px;}
 
+/*--Данные ссылок контактов--*/
 .cont-link {
 color: var(--main-text-color);
 font-weight: 400;
@@ -157,14 +149,12 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 text-decoration: none;
 display: block;
-padding: 24px 0;
-}
+padding: 24px 0;}
 
 /*--Меняем цвет ссылок при наведении--*/
 .cont-link:hover,
 .cont-link:focus {
-color: var(--link-active-color);
-}
+color: var(--link-active-color);}
 
 
 /*--Данные секции HERO--*/
@@ -181,8 +171,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 url(../images/hero/background-hero.jpg);
 background-size: cover;
 background-repeat: no-repeat;
-background-position: center;
-}
+background-position: center;}
 
 /*--Задаем параметры заголовка секции hero--*/
 .hero-title {
@@ -194,8 +183,7 @@ text-align: center;
 letter-spacing: 0.02em;
 max-width: 496px;
 margin-left: auto;
-margin-right: auto;
-}
+margin-right: auto;}
 
 /*---Кнопка Order Service---*/
 .main-btn {
@@ -215,16 +203,14 @@ margin-left: auto;
 margin-right: auto;
 margin-top: 48px;
 padding: 16px 32px 16px 32px;
-border-radius: 4px;
-}
+border-radius: 4px;}
 
 /*--Меняем цвет кнопок при навдении--*/
 .main-btn:hover,
 .main-btn:focus {
 color: var(--main-btn-color);
 background-color: #404BBF;
-cursor: pointer;
-}
+cursor: pointer;}
 
 /*--Задаем внутренние отступы секции Adv--*/
 .section-adv {padding: 120px 0;}
@@ -261,6 +247,18 @@ overflow: hidden;
 {display: flex;
 gap: 24px;}
 
+/*--Определяем ширину пункта списка--*/
+.section-item {
+    flex-basis: calc((100% - 3*24px)/4);
+    /*--width: calc((100% - 3*24px)/4)--*/
+}
+
+/*--Определяем ширину списка img--*/
+.section-item-img {
+    flex-basis: calc((100% - 3*16px)/3);
+    /*--width: calc((100% - 3*16px)/3)--*/
+}
+
 /*--Описываем иконки секции Advantages--*/
 .icon-adv
 {display: flex;
@@ -273,28 +271,14 @@ margin-bottom: 8px;
 border-radius: 4px;
 }
 
-
-/*--Определяем ширину пункта списка--*/
-.section-item {
-flex-basis: calc((100% - 3*24px)/4);
-/*--width: calc((100% - 3*24px)/4)--*/
-}
-
-/*--Определяем ширину списка img--*/
-.section-item-img {
-    flex-basis: calc((100% - 3*16px)/3);
-    /*--width: calc((100% - 3*16px)/3)--*/
-}
-
 /*--Данные подзаголовков--*/
-.section-subtitle {
-    color: var(--section-main-text-color);
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    margin-bottom: 8px;
-}
+.section-subtitle 
+{color: var(--section-main-text-color);
+ font-weight: 500;
+ font-size: 20px;
+ line-height: 1.2;
+ letter-spacing: 0.02em;
+ margin-bottom: 8px;}
 
 /*--Данные текста секции--*/
 .section-text {
@@ -305,14 +289,13 @@ flex-basis: calc((100% - 3*24px)/4);
     letter-spacing: 0.02em;
 }
 
-/*--Задаем внутренний отступ секции Work Exmpl--*/
-.section-exmp {
-padding-bottom: 120px;
-}
+/*--Задаем внутренний отступ секции Work Exmaples--*/
+.section-exmp 
+{padding-bottom: 120px;}
 
 /*--Данные секции Our Team, у которой отличается фон--*/
 .section-team
-{background: var(--section-team-background-color);
+{background-color: var(--section-team-background-color);
 padding: 120px 0;} /*--Задаем внутренние паддинги--*/
 
 .section-team-card {
@@ -322,55 +305,42 @@ padding: 120px 0;} /*--Задаем внутренние паддинги--*/
     /*--width: calc((100% - 3*24px)/4)--*/
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(47, 66, 0.16), 0px 2px 1px rgba(47, 66, 0.08);
+    0px 1px 1px rgba(47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 /*--Создание контейнера - имя, должность членов команды--*/
 .name-job
-{padding: 32px 0;
-outline: 1px solid red; } /*--внутренние отступы контейнера--*/
+{padding: 32px 0; } /*--внутренние отступы контейнера--*/
 
 /*--Задание параметров ФИ сотрудника--*/
 .name-job .section-subtitle
 {text-align: center;
- margin-bottom: 8px;
-}
+ margin-bottom: 8px;}
 
 /*--Задание параметров должности сотрудника--*/
 .name-job .section-text 
 {text-align: center;}
 
-/*--Класс для заливки иконок соцсетей--*/
-.icon-sl 
-{fill: #f4f4fd;}
-
-
-/*--Задание отступов контейнеру соцсетей Our team--*/
-.social-link-container
-{padding: 0;
-margin-top: 8px;}
 
 /*--Контейнер 4-х ячеек с иконками соцсетей--*/
 .section-social-ul
 {display: flex;
 gap: 24px;
-justify-content: center;
-}
+justify-content: center;}
 
 
 /*--Ячейка каждой иконки линка соцсети--*/
 .social-link
-{
-width: 40px;
+{width: 40px;
 height: 40px;
-margin-top: 8px;
-}
+margin-top: 8px;}
 
+/*--Меняем цвет при наведении--*/
 .social-link:hover,
 .social-link:focus
 {background-color: #31D0AA; }
 
-
+/*--Описание класса ссылки соцсетей--*/
 .social-link-a
 {
 display: flex;
@@ -380,19 +350,26 @@ background-color: #4D5AE5;
 border-radius: 50%;
 align-items: center;
 justify-content: center;
-fill: #FFFFFF;
+color: #FFFFFF;
 }
 
-
+/*--Меняем цвет при наведении --*/
 .social-link-a:hover,
 .social-link-a:focus {
-background-color: #31d0aa;
+background-color: #404bbf;
 }
 
+/*--Класс для заливки иконок логотипов компаний--*/
+.icon-sl 
+{fill: currentColor;}
+
+/*--Класс для заливки иконок соцсетей футера--*/
+.icon-sl-foot 
+{fill: #f4f4fd;}
 
 /*--Задаем внутренние паддинги секции закачиков--*/
 .section-customers
-{padding: 120px; 0}
+{padding: 120px; 0;}
 
 /*--Описание секции Заказчика--*/
 .section-customers-ul
@@ -405,19 +382,32 @@ background-color: #31d0aa;
 
 /*--Описываем ссылку на иконку Заказчика--*/
 .customer-link
-{display: flex;
-justify-content: center; 
-align-items: center;
+{
+ width: calc((100% - 120px)/6);
  width: 168px; 
  height: 88px;
- border: 1px solid #8E8F99;
- background-color: #FFFFFF;
-fill: #8e8f99;
+  background-color: #FFFFFF;
 }
 
-.customer-link:hover,
-.customer-link:focus
-{fill: #404BBF;}
+/*--Описываем ссылку логотипа компаний--*/
+.customer-link-a
+{
+width: 100%;
+height: 100%;
+border: 1px solid #8E8F99;
+border-radius: 4px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #8e8f99;
+}
+
+.customer-link-a: hover,
+.customer-link-a: :focus
+{
+border-color: #404bbf;
+color: #404bbf;
+}
 
 
 /*--Задание паддингов для секции Портфолио--*/
@@ -477,8 +467,7 @@ fill: #8e8f99;
 
 /*--Описываем каждый элемент списка--*/
 .section-item-card {
-flex-basis: calc((100% - 2*24px)/3);
-}
+flex-basis: calc((100% - 2*24px)/3);}
 
 /*--Добавляем эффект тени на карточку при ховере--*/
 .section-item-card:hover
@@ -488,8 +477,7 @@ flex-basis: calc((100% - 2*24px)/3);
 .img-title {
 padding: 32px 16px; /*--внутренние отступы контейнера--*/
 border: 1px solid #e7e9fc;
-border-top: none;
-}
+border-top: none;}
 
 /*--Задание отступа подзаголовку img Portfolio--*/
 .img-title .section-subtitle
@@ -497,8 +485,7 @@ border-top: none;
 
 /*--Делаем ссылку блочным элементом--*/
 .pf-link
-{display: block;
-}
+{display: block;}
 
 /*--Эффект тени при наведении на карточку Портфолио--*/
 .pf-link:hover,
@@ -570,5 +557,4 @@ margin-bottom: 16px;
 /*--Контейнер 4-х ячеек с иконками соцсетей--*/
 .section-social-ul-footer 
 {display: flex;
- gap: 16px;
- }
+ gap: 16px; }
