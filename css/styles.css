@@ -340,6 +340,7 @@ outline: 1px solid red; } /*--внутренние отступы контейн
 .name-job .section-text 
 {text-align: center;}
 
+/*--Класс для заливки иконок соцсетей--*/
 .icon-sl 
 {fill: #f4f4fd;}
 
@@ -385,7 +386,7 @@ fill: #FFFFFF;
 
 .social-link-a:hover,
 .social-link-a:focus {
-background-color: #404BBF;
+background-color: #31d0aa;
 }
 
 
