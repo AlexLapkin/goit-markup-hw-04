@@ -50,6 +50,7 @@ height: auto;}
 --footer-background-color:#2E2F42;
 --footer-main-text-color:#F4F4FD;
 --footer-secondary-text-color: #fff;
+--icon-fill-color: #f4f4fd;
 }
 
 /*--Задаем контейнер для центровки и ограничения ширины контента--*/
@@ -305,7 +306,7 @@ padding: 120px 0;} /*--Задаем внутренние паддинги--*/
     /*--width: calc((100% - 3*24px)/4)--*/
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 /*--Создание контейнера - имя, должность членов команды--*/
@@ -359,13 +360,10 @@ color: #FFFFFF;
 background-color: #404bbf;
 }
 
-/*--Класс для заливки иконок логотипов компаний--*/
-.icon-sl 
-{fill: currentColor;}
-
-/*--Класс для заливки иконок соцсетей футера--*/
-.icon-sl-foot 
-{fill: #f4f4fd;}
+/*--Класс для заливки иконок соцсетей--*/
+.icon-sl {
+fill: var(--icon-fill-color);
+}
 
 /*--Задаем внутренние паддинги секции закачиков--*/
 .section-customers
@@ -402,13 +400,16 @@ justify-content: center;
 color: #8e8f99;
 }
 
-.customer-link-a: hover,
-.customer-link-a: :focus
+.customer-link-a:hover,
+.customer-link-a:focus
 {
 border-color: #404bbf;
 color: #404bbf;
 }
 
+/*--Класс для заливки иконок логотипов компаний--*/
+.icon-customer 
+{fill: currentColor;}
 
 /*--Задание паддингов для секции Портфолио--*/
 .section-port {
@@ -558,3 +559,25 @@ margin-bottom: 16px;
 .section-social-ul-footer 
 {display: flex;
  gap: 16px; }
+
+ /*--Описание класса ссылки соцсетей футера--*/
+ .social-link-a-foot {
+     display: flex;
+     width: 100%;
+     height: 100%;
+     background-color: #4D5AE5;
+     border-radius: 50%;
+     align-items: center;
+     justify-content: center;
+     color: #FFFFFF;
+ }
+
+ /*--Меняем цвет при наведении на ссылку футера--*/
+ .social-link-a-foot:hover,
+ .social-link-a-foot:focus {
+     background-color: #31D0AA;
+ }
+
+ /*--Класс для заливки иконок соцсетей футера--*/
+ .icon-sl-foot {
+  fill: #f4f4fd; }
