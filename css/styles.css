@@ -367,7 +367,7 @@ fill: var(--icon-fill-color);
 
 /*--Задаем внутренние паддинги секции закачиков--*/
 .section-customers
-{padding: 120px; 0;}
+{padding: 120px 0;}
 
 /*--Описание секции Заказчика--*/
 .section-customers-ul
