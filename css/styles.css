@@ -204,14 +204,16 @@ margin-left: auto;
 margin-right: auto;
 margin-top: 48px;
 padding: 16px 32px 16px 32px;
-border-radius: 4px;}
+border-radius: 4px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);}
 
 /*--Меняем цвет кнопок при навдении--*/
 .main-btn:hover,
 .main-btn:focus {
 color: var(--main-btn-color);
 background-color: #404BBF;
-cursor: pointer;}
+cursor: pointer;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);}
 
 /*--Задаем внутренние отступы секции Adv--*/
 .section-adv {padding: 120px 0;}
@@ -320,7 +322,8 @@ padding: 120px 0;} /*--Задаем внутренние паддинги--*/
 
 /*--Задание параметров должности сотрудника--*/
 .name-job .section-text 
-{text-align: center;}
+{text-align: center;
+margin-bottom: 8px}
 
 
 /*--Контейнер 4-х ячеек с иконками соцсетей--*/
@@ -333,13 +336,7 @@ justify-content: center;}
 /*--Ячейка каждой иконки линка соцсети--*/
 .social-link
 {width: 40px;
-height: 40px;
-margin-top: 8px;}
-
-/*--Меняем цвет при наведении--*/
-.social-link:hover,
-.social-link:focus
-{background-color: #31D0AA; }
+height: 40px;}
 
 /*--Описание класса ссылки соцсетей--*/
 .social-link-a
@@ -357,8 +354,8 @@ color: #FFFFFF;
 /*--Меняем цвет при наведении --*/
 .social-link-a:hover,
 .social-link-a:focus {
-background-color: #404bbf;
-}
+background-color: #31D0AA;}
+
 
 /*--Класс для заливки иконок соцсетей--*/
 .icon-sl {
@@ -384,7 +381,7 @@ fill: var(--icon-fill-color);
  width: calc((100% - 120px)/6);
  width: 168px; 
  height: 88px;
-  background-color: #FFFFFF;
+ background-color: #FFFFFF;
 }
 
 /*--Описываем ссылку логотипа компаний--*/
